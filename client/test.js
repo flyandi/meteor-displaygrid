@@ -10,6 +10,10 @@ Template.grid.rendered = function() {
 
 	});
 
-	Grid.load(0, 0, "/lego.png");
+	Grid.load(0, 0, "/minus.png", function() {
+
+		console.log(Grid.toSerialImage());
+
+	});
 
 }
